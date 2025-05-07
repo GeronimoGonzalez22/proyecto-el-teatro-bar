@@ -1,0 +1,6 @@
+# Archivos del sistema
+desktop.ini
+Thumbs.db
+
+# Carpeta de configuración de VS Code
+.vscode/

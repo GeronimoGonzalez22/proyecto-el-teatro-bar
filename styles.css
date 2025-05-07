@@ -1,0 +1,775 @@
+@import url("https://use.typekit.net/vit8khh.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem; 
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+
+iframe{
+    border: none;            
+    border-radius: 16px;     
+    overflow: hidden;        
+}
+
+p{
+    font-family: proxima-nova, sans-serif;
+    /* font-weight: 700; */
+    font-style:normal;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: inherit;
+}
+a:hover{
+    color: #A80000;
+}
+
+
+
+
+/* =====================================
+=               Header                =
+===================================== */
+
+.contenedor-header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 4rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+    
+.logo{
+    width: 10rem;
+}
+     
+ul li{
+    display: inline-block;
+    color: #4C4C4C;
+    padding: 1rem 0rem 1rem 2rem;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+}
+ 
+
+/* ========= End of Header ========= */
+
+-------------------------------------------------------------------------
+
+
+
+/* =====================================
+=               Agenda                =
+===================================== */
+
+.titulo-mes-actual{
+    display: flex;
+    justify-content: center; 
+}
+
+.contenedor-calendario{
+display: flex;
+box-shadow: 0px 0px 2px 0.5px rgba(0, 0, 0, 0.1);
+justify-content: space-between;
+align-items: center;
+padding-top: 0.5rem;
+padding-bottom: 0.5rem;
+margin-inline: 4rem;
+margin-top: 3rem;
+border-radius: 1rem;
+height: auto;
+}
+
+.contenedor-calendario img{
+    width: 2rem;
+    margin-inline: 0.5rem;
+}
+
+
+/*Grilla Cards*/
+.contenedor-grillaHome{
+    display: grid;
+    grid-template-areas: 
+    "card1 card2 card3 card4"
+    "card5 card6 card7 card8"
+    "card9 card10 card11 card12";
+    gap: 2rem;
+    margin: 2rem 4rem 0rem 4rem;
+    padding-bottom: 4rem;
+}
+
+
+/* Cards*/
+.contenedor-card__link:hover{
+color: inherit;
+}
+
+.contenedor-card{
+    display: flex;
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-card:hover{
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.contenedor-card__imagen{
+    width: 100%;
+    height: auto;
+}
+
+.contenedor-card__imagen img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1rem 1rem 2rem 2rem;
+}
+
+.contenedor-card__texto{
+    display: flex;
+    border: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    bottom:0;
+    width: 100%;
+    padding: 1rem;
+    /* height: 5.5rem; */
+    height: auto;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contenedor-card__texto-nombre{
+display: flex;
+height: 1rem;
+justify-content: center;
+align-items: center;
+font-family: proxima-nova, sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 1.25rem;
+}
+
+.contenedor-card__texto-fecha{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    height: 1.5rem;
+    align-items: center;
+}
+.contenedor-card__texto-fecha-contenido {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 1.5rem;
+
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+}
+
+.contenedor-card__texto-numero{
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.75rem;
+    color: #A80000;
+}
+
+
+/* ========= End of Agenda ========= */
+
+
+.contenedor-video-sala{
+display: flex;
+justify-content:center;
+margin-inline: 4rem;
+height: auto;
+}
+
+.contenedor-card-sponsor{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-inline: 4rem;
+    gap: 2rem;
+}
+
+.contenedor-card-sponsor div{
+
+    background-color: rgb(169, 169, 169);
+    width: 25%;
+    height: 4rem;
+    text-align: center;
+    border-radius: 16px;
+    overflow: hidden; 
+}
+
+/* =====================================
+=               Footer                =
+===================================== */
+
+footer{
+background-color: black;
+color: white;
+padding: 4rem;
+margin-top: 6rem;
+}
+
+.contenedor-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-izq{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 14rem;
+}
+
+.contenedor-redes{
+    display: flex;
+    height: 10rem;
+}
+
+.contenedor-redes div a img{
+    padding-right: 1rem;
+}
+.contenedor-medio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.contenedor-mapa{
+height: 10rem;
+}
+
+.contenedor-der{
+    display: flex;
+    flex-direction: column;
+    width: 14rem;
+    justify-content: space-between;
+}
+.contenedor-wsp{
+height: 10rem;
+}
+
+.contenedor-wsp a img{
+width: 2.5rem;
+height: 2.5rem;
+}
+
+.link-wsp{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.link-wsp p{
+    display: flex;
+    padding-left: 1rem;
+}
+
+.contenedor-direccion{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+
+/* ========= End of Footer ========= */
+
+
+/* SHOW
+===================================== */
+
+.baner{
+    display: flex;
+    justify-content: center;
+    padding-inline: 3rem;
+}
+
+.baner img{
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.info-horario{
+    display: flex;
+    justify-content: center;
+    padding: 4rem 4rem 3rem 4rem;
+}
+.descripcion{
+    display: flex;
+}
+
+.titulo div h2{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 4rem 2rem 4rem;
+}
+
+.box-izq{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.boton-comprar{
+    display: flex;
+    width:100%;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    border-radius: 1rem;
+    border-style: none;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    background-color:#A80000;
+    color: white;
+}
+
+
+.box-der{
+    display: flex;
+    flex-direction: column;
+    padding-right: 3rem;
+    width: 50vw;
+}
+.contenedor-media{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contenedor-seguinos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 4rem;
+}
+
+.titulo-redes{
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+.contenedor-redes-show{
+    display: flex;
+}
+
+.contenedor-redes-show div a img{
+display: flex;
+padding-right: 1rem;
+}
+
+.contenedor-redes-show div a{
+    display: flex;
+    height: 100%;
+}
+
+.opiniones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 10rem;
+}
+
+.opiniones div h2{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.opiniones div p{
+    padding-bottom: 1rem;
+}
+/* End of SHOW
+===================================== */
+
+/* Info-Sala
+===================================== */
+.descripcion-sala{
+    display: flex;
+}
+
+.box-izq-sala{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    height:25rem;
+}
+
+.box-der-sala{
+    display: flex;
+    flex-direction: column;
+    padding-right: 3rem;
+    width: 50vw;
+}
+.contenedor-texto{
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height:fit-content;
+
+}
+.contenedor-texto p{
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+.img-sala{
+    border-radius: 16px;
+}
+
+.titulo-descarga{
+display: flex;
+justify-content: center;
+padding-top: 3rem;
+padding-bottom: 2rem;
+}
+ 
+.contenedor-descarga{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.boton-descarga{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 14rem;
+    border-radius: 0.5rem;
+    border-style: none;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    background-color:#A80000;
+    color: white;
+}
+
+.contenedor-todo{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.boton-todo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 14rem;
+    border-radius: 0.5rem;
+    border-style: none;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    background-color:#A80000;
+    color: white;;
+}
+
+.titulo-plano{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;   
+}
+
+.contenedor-plano{
+    display: flex;
+    justify-content: center;
+}
+.plano{
+    display: flex;
+    width: 60%;
+    border-radius: 1rem;
+}
+/* End of Info-Sala
+===================================== */
+
+/* Cursos y Talleres
+===================================== */
+.mensaje{
+    display: flex;
+    justify-content: center;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    padding: 2rem 2rem;
+    margin: 0rem 4rem 0rem 4rem;
+    text-align: center;
+
+}
+.aclaracion{
+    display: flex;
+    justify-content: center;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    margin: 0rem 4rem 0rem 4rem;
+    text-align: center;
+}
+
+.contenedor-redes-talleres{
+    display: flex;
+    justify-content:center;
+    margin: 4rem;
+}
+.contenedor-redes-talleres div a img{
+    display: flex;
+    height: 2rem;
+}
+.contenedor-redes-icono{
+    display: flex;
+    padding-right: 6rem;
+}
+.contenedor-redes-icono div{
+    display: flex;
+    padding-right: 1rem;
+}
+
+.linea-divisoria {
+margin-inline: 4rem;
+  }
+
+.titulo-clases{
+    display: flex;
+    justify-content: center;
+}
+.titulo-clases h2{
+    text-align: center;
+    padding: 3rem 0rem 1rem 0rem;
+}
+
+.parrafo-clases{
+    display: flex;
+    justify-content: center;
+}
+.parrafo-clases p{
+    text-align: center;
+    padding: 1rem 20rem 1rem 20rem;
+}
+
+
+/* Formulario*/
+
+.contenedor-formulario{
+    display: flex;
+    margin-inline: 8rem;
+    padding-top: 2rem;
+    flex-direction: column;
+}
+.form-1{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.form-2{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.cont-comentario{
+    display: flex;
+    padding-bottom: 1rem; 
+    justify-content: center;
+    width: 100%;
+}
+
+textarea{
+    display: flex;
+    border-radius: 0.7rem;
+    width: 100%;
+    height: 6rem;
+    padding: 16px;
+}
+
+textarea::placeholder{
+    color:gray;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    text-align: start;
+}
+
+label{
+    display: flex;
+    text-align: center;
+    font-family: proxima-nova, sans-serif;
+    font-weight:400;
+    font-style:normal;
+    font-size: 14px;
+}
+.subir-archivo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem 1rem 0rem;
+    border: 1px solid rgb(118, 118, 118);
+    border-radius: 0.7rem;
+    border-width: 0.1rem;
+    gap: 2rem;
+    height: 40px;
+}
+
+input{
+    border-radius: 0.7rem;
+    border-width: 0.5px;
+    padding-left: 1rem;
+    font-family: proxima-nova, sans-serif;
+    font-weight:lighter;
+    font-style:normal;
+    height: 40px;
+    color: gray;
+    font-size: 14px;
+}
+
+input::placeholder {
+    color:gray;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+  }
+
+input::file-selector-button{
+    text-align: center;
+    color:#A80000;
+    background-color: white;
+    border-color: #A80000;
+    border-width: 0.5px;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    height: 32px;
+    font-family: proxima-nova, sans-serif;
+    font-weight:600;
+    font-style:normal;
+    font-size: 13px;
+}
+
+input::-webkit-file-upload-button{
+margin-block: 0.25rem;
+padding-inline: 1rem;
+}
+
+.boton-enviar{
+    display: flex;
+    padding-bottom: 1rem;
+    justify-content: center; 
+}
+.input-enviar{
+    display: flex;
+    padding: 0rem;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    width: 50%;
+    border-width: 0px;
+    color: white;
+    background-color: #A80000;
+}
+/* End of Cursos y Talleres
+===================================== */
+
+/* =====================================
+=               Galeria                =
+===================================== */
+
+.galeria{
+    margin-inline: 14rem;
+}
+.todo{
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.bar{
+    background-color: gray;
+}
+
+.opera{
+    background-color: grey;
+}
+
+.contenedor-fotos{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 4rem 0.5rem 4rem;
+}
+
+.columna{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.columna div{
+    display: flex;
+    padding-bottom: 1rem;
+    margin: 1rem;
+}
+
+.columna div img{
+    display: flex;
+    height: 25vw;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.mostrar-mas{
+    display: flex;
+    justify-content: center;
+}
+/* ========= End of Galeria ========= */
