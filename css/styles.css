@@ -28,7 +28,6 @@ iframe{
 
 p{
     font-family: proxima-nova, sans-serif;
-    /* font-weight: 700; */
     font-style:normal;
     font-size: 16px;
 }
@@ -110,7 +109,44 @@ color: #A80000 !important;
 
 -------------------------------------------------------------------------
 
+/* =====================================
+=               Slider                =
+===================================== */
 
+#carouselExampleIndicators .carousel-indicators {
+  gap: 0 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#carouselExampleIndicators .carousel-indicators button {
+  width: 6vw;
+  max-width: 39px;
+  height: 1vw;
+  max-height: 6px;
+  min-width: 20px;
+  min-height: 3px;
+  background-color: #c7c7c7;
+  border: none;
+  border-radius: 0.25rem;
+  opacity: 1;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 0.5rem;
+}
+
+#carouselExampleIndicators .carousel-indicators .active {
+  background-color: #A80000;
+}
+#carouselExampleIndicators .carousel-indicators button:hover {
+  background-color: #f0f0f0;
+}
+
+.carousel{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* ========= End of Slider ========= */
 
 /* =====================================
 =               Agenda                =
@@ -123,7 +159,8 @@ color: #A80000 !important;
 
 .contenedor-calendario{
 display: flex;
-box-shadow: 0px 0px 2px 0.5px rgba(0, 0, 0, 0.1);
+box-shadow: 0px 0px 2px 0.5px rgba(0, 0, 0, 0.08);
+border: 1.2px solid rgba(0, 0, 0, 0.08);
 justify-content: space-between;
 align-items: center;
 padding-top: 0.5rem;
