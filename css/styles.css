@@ -105,19 +105,70 @@ color: #A80000 !important;
     border: 1px solid transparent;
     transition: all 0.3s ease;
 }
-/* ========= End of Header ========= */
-
--------------------------------------------------------------------------
 
 /* =====================================
 =               Slider                =
 ===================================== */
 
+#carouselExampleIndicators {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 480px){
+     #carouselExampleIndicators {
+    height: 150px;
+  }
+}
+@media (min-width: 480px){
+     #carouselExampleIndicators {
+    height: 180px;
+  }
+}
+
+@media (min-width: 576px) {
+  #carouselExampleIndicators {
+    height: 250px;
+  }
+}
+@media (min-width: 768px) {
+  #carouselExampleIndicators {
+    height: 300px;
+  }
+}
+@media (min-width: 992px) {
+  #carouselExampleIndicators {
+    height: 315px;
+  }
+}
+@media (min-width: 1666px) {
+  #carouselExampleIndicators {
+    height: 450px;
+  }
+}
+
+#carouselExampleIndicators .carousel-inner,
+#carouselExampleIndicators .carousel-item,
+#carouselExampleIndicators .carousel-item img {
+  height: 100%;
+}
+
+#carouselExampleIndicators .carousel-item img {
+  object-fit: cover;
+  width: 100%;
+}
+
 #carouselExampleIndicators .carousel-indicators {
-  gap: 0 1vw;
+  gap: 0 0.2vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 10;
 }
 
 #carouselExampleIndicators .carousel-indicators button {
@@ -138,15 +189,14 @@ color: #A80000 !important;
 #carouselExampleIndicators .carousel-indicators .active {
   background-color: #A80000;
 }
+
 #carouselExampleIndicators .carousel-indicators button:hover {
   background-color: #f0f0f0;
 }
-
 .carousel{
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12) !important;
 }
 
-/* ========= End of Slider ========= */
 
 /* =====================================
 =               Agenda                =
@@ -348,108 +398,95 @@ font-style: normal;
 }
 
 /* =====================================
-=               Video Sala               =
+=               Sponsors               =
 ===================================== */
+.logo-rect {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
 
-.contenedor-video-sala{
-display: flex;
-justify-content:center;
-margin-inline: 4rem;
-height: auto;
-}
-
-.contenedor-card-sponsor{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 3rem;
-    margin-inline: 4rem;
-    gap: 2rem;
-}
-
-.contenedor-card-sponsor div{
-
-    background-color: rgb(169, 169, 169);
-    width: 25%;
-    height: 4rem;
-    text-align: center;
-    border-radius: 16px;
-    overflow: hidden; 
 }
 
 /* =====================================
 =               Footer                =
 ===================================== */
 
-footer{
-background-color: black;
-color: white;
-padding: 4rem;
-margin-top: 6rem;
+.icono-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s, transform 0.3s;
 }
 
-.contenedor-footer{
+.icono-footer a:hover {
+  color: #25D366;
+}
+
+
+.icono-footer-ig a {
+  fill: white;
+}
+
+.icono-footer-ig a:hover {
+  fill: #A80000;
+}
+
+.icono-footer-yt{
+    stroke: white;
+}
+.icono-footer-yt:hover{
+    stroke: #A80000;
+}
+
+.icono-footer-fb{
+    stroke: white;
+}
+
+.icono-footer-fb:hover{
+    stroke: #A80000;
+}
+
+.icono-footer-x{
+    fill: white;
+    stroke: white;
+}
+.icono-footer-x:hover{
+    stroke: #A80000;
+    fill: #A80000;
+}
+
+.texto-footer{
+    color: white;
+}
+
+.texto-footer-bases{
+    color: white;
+}
+
+.texto-footer-bases:hover{
+color: #A80000;
+}
+
+.contenedor-iconos-footer{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.contenedor-izq{
+@media (max-width: 381px) {
+  .contenedor-iconos-footer{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 14rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
 }
 
-.contenedor-redes{
-    display: flex;
-    height: 10rem;
+.border-footer{
+    border-top: 2px solid #A80000;
 }
-
-.contenedor-redes div a img{
-    padding-right: 1rem;
-}
-.contenedor-medio{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-.contenedor-mapa{
-height: 10rem;
-}
-
-.contenedor-der{
-    display: flex;
-    flex-direction: column;
-    width: 14rem;
-    justify-content: space-between;
-}
-.contenedor-wsp{
-height: 10rem;
-}
-
-.contenedor-wsp a img{
-width: 2.5rem;
-height: 2.5rem;
-}
-
-.link-wsp{
-    display: flex;
-    align-items: center;
-    justify-content: end;
-}
-
-.link-wsp p{
-    display: flex;
-    padding-left: 1rem;
-}
-
-.contenedor-direccion{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
-
 
 /* SHOW
 ===================================== */
