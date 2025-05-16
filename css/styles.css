@@ -22,7 +22,7 @@ body{
 
 iframe{
     border: none;            
-    border-radius: 16px;     
+    border-radius: 1rem;     
     overflow: hidden;        
 }
 
@@ -34,6 +34,7 @@ p{
 
 a{
     text-decoration: none;
+    color: inherit;
 }
 a:visited{
     color: inherit;
@@ -490,41 +491,6 @@ color: #A80000;
 
 /* SHOW
 ===================================== */
-
-.baner{
-    display: flex;
-    justify-content: center;
-    padding-inline: 3rem;
-}
-
-.baner img{
-    border-radius: 1rem;
-    width: 100%;
-}
-
-.info-horario{
-    display: flex;
-    justify-content: center;
-    padding: 4rem 4rem 3rem 4rem;
-}
-.descripcion{
-    display: flex;
-}
-
-.titulo div h2{
-    display: flex;
-    justify-content: center;
-    padding: 2rem 4rem 2rem 4rem;
-}
-
-.box-izq{
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-    padding-left: 3rem;
-    padding-right: 3rem;
-}
-
 .boton-comprar{
     display: flex;
     width:100%;
@@ -543,60 +509,98 @@ color: #A80000;
     color: white;
 }
 
-
-.box-der{
-    display: flex;
-    flex-direction: column;
-    padding-right: 3rem;
-    width: 50vw;
-}
-.contenedor-media{
-    display: flex;
-    justify-content: flex-end;
+.boton-comprar:hover{
+  background-color: #8A0000;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-.contenedor-seguinos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding-top: 4rem;
+/* Iconos Redes*/
+
+
+.icono-ig-show a {
+  fill: rgb(0, 0, 0);
 }
 
-.titulo-redes{
-    display: flex;
-    padding-bottom: 1rem;
+.icono-ig-show a:hover {
+  fill: #A80000;
 }
 
-.contenedor-redes-show{
-    display: flex;
+.icono-yt-show{
+    stroke: rgb(0, 0, 0);
+}
+.icono-yt-show:hover{
+    stroke: #A80000;
 }
 
-.contenedor-redes-show div a img{
-display: flex;
-padding-right: 1rem;
+.icono-fb-show{
+    stroke: rgb(0, 0, 0);
 }
 
-.contenedor-redes-show div a{
-    display: flex;
-    height: 100%;
+.icono-fb-show:hover{
+    stroke: #A80000;
 }
 
-.opiniones{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-inline: 10rem;
+.icono-x-show{
+    fill: rgb(0, 0, 0);
+    stroke: rgb(4, 4, 4);
+}
+.icono-x-show:hover{
+    stroke: #A80000;
+    fill: #A80000;
 }
 
-.opiniones div h2{
-    padding-top: 4rem;
-    padding-bottom: 2rem;
+.card{
+  box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.25);
+}
+/*XS*/
+@media (max-width: 576px) {
+  .texto-show{
+    height: auto !important;
+  }
+  .video-show{
+    height: 45vh;
+  }
 }
 
-.opiniones div p{
-    padding-bottom: 1rem;
+@media (min-width: 576px) {
+  .texto-show{
+    height: auto !important;
+  }
+  .video-show{
+    height: 50vh;
+  }
+  /* Estilos para sm en adelante */
 }
+
+@media (min-width: 768px) {
+  /* Estilos para md en adelante */
+    .texto-show{
+    height: auto !important;
+  }
+  .video-show{
+    height: 55vh;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Estilos para lg en adelante */
+  .texto-show{
+    height: 55vh;
+  }
+  .video-show{
+    height: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Estilos para xl en adelante */
+
+}
+
+@media (min-width: 1400px) {
+  /* Estilos para xxl en adelante */
+}
+
 /* End of SHOW
 ===================================== */
 
