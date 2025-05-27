@@ -1,0 +1,44 @@
+
+.galeria{
+    margin-inline: 14rem;
+}
+.todo{
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.bar{
+    background-color: gray;
+}
+
+.opera{
+    background-color: grey;
+}
+
+.contenedor-fotos{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 4rem 0.5rem 4rem;
+}
+
+.columna{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.columna div{
+    display: flex;
+    padding-bottom: 1rem;
+    margin: 1rem;
+}
+
+.columna div img{
+    display: flex;
+    height: 25vw;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.mostrar-mas{
+    display: flex;
+    justify-content: center;
+}

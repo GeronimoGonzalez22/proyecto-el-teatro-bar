@@ -1,0 +1,14 @@
+
+@use "./partials/reset";
+@use "./partials/variables";
+@use "./partials/global";
+@use "./partials/media";
+@use "./partials/typography";
+@use "./partials/header";
+@use "./partials/footer";
+
+@use "./partials/pages/inicio.scss";
+@use "./partials/pages/show.scss";
+@use "./partials/pages/info-sala.scss";
+@use "./partials/pages/talleres.scss";
+@use "./partials/pages/galeria.scss";

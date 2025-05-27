@@ -1,0 +1,66 @@
+.icono-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.icono-footer a:hover {
+  color: #25D366;
+}
+
+.icono-footer-ig a {
+  fill: white;
+}
+
+.icono-footer-ig a:hover {
+  fill: #A80000;
+}
+
+.icono-footer-yt{
+    stroke: white;
+}
+.icono-footer-yt:hover{
+    stroke: #A80000;
+}
+
+.icono-footer-fb{
+    stroke: white;
+}
+
+.icono-footer-fb:hover{
+    stroke: #A80000;
+}
+
+.icono-footer-x{
+    fill: white;
+    stroke: white;
+}
+.icono-footer-x:hover{
+    stroke: #A80000;
+    fill: #A80000;
+}
+
+.texto-footer{
+    color: white;
+}
+
+.texto-footer-bases{
+    color: white;
+}
+
+.texto-footer-bases:hover{
+color: #A80000;
+}
+
+.contenedor-iconos-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.border-footer{
+    border-top: 2px solid #A80000;
+}
