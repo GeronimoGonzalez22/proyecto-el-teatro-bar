@@ -1,103 +1,69 @@
 
 //Info-Sala 
-.descripcion-sala{
-    display: flex;
+.descripcion-teatro {
+
+  // Scrollbar para Firefox
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+
+  // Scrollbar para WebKit (Chrome, Safari, Edge)
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: #999;
+    }
+  }
 }
 
-.box-izq-sala{
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    height:25rem;
+
+.boton-descarga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  font-weight: 600;
+  font-size: clamp(0.75rem, 2.5vw, 1rem);
+  text-transform: uppercase;
+  background-color: #A80000;
+  color: white !important;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: normal;
 }
 
-.box-der-sala{
-    display: flex;
-    flex-direction: column;
-    padding-right: 3rem;
-    width: 50vw;
-}
-.contenedor-texto{
-    display: flex;
-    flex-direction: column;
-    overflow: scroll;
-    height:fit-content;
-
-}
-.contenedor-texto p{
-    display: flex;
-    padding-bottom: 1rem;
+.boton-descarga:hover {
+  background-color: #8A0000;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-.img-sala{
-    border-radius: 16px;
-}
 
-.titulo-descarga{
-display: flex;
-justify-content: center;
-padding-top: 3rem;
-padding-bottom: 2rem;
-}
- 
-.contenedor-descarga{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 4rem;
-    padding-right: 4rem;
-}
-.boton-descarga{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2rem;
-    width: 14rem;
-    border-radius: 0.5rem;
-    border-style: none;
-    font-family: proxima-nova, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 16px;
-    background-color:#A80000;
-    color: white;
-}
-
-.contenedor-todo{
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-}
-.boton-todo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2rem;
-    width: 14rem;
-    border-radius: 0.5rem;
-    border-style: none;
-    font-family: proxima-nova, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 16px;
-    background-color:#A80000;
-    color: white;;
-}
-
-.titulo-plano{
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;   
-}
-
-.contenedor-plano{
-    display: flex;
-    justify-content: center;
-}
-.plano{
-    display: flex;
-    width: 60%;
-    border-radius: 1rem;
+.boton-plano {
+  color: #A80000;
+  border: 1px solid #A80000;
+  border-color: #A80000;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  text-transform: uppercase;
+  font-size: clamp(14px, 2.5vw, 1rem);
+  border-radius: 1rem;
+  transition: background-color 0.4s ease;
+  margin-bottom: 4rem;
+  &:hover{
+    background-color: #A80000;
+    color: #ffffff;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+  }
 }

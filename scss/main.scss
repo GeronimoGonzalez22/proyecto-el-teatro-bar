@@ -2,10 +2,11 @@
 @use "./partials/reset";
 @use "./partials/variables";
 @use "./partials/global";
-@use "./partials/media";
-@use "./partials/typography";
 @use "./partials/header";
 @use "./partials/footer";
+@use "./partials/media";
+@use "./partials/typography";
+
 
 @use "./partials/pages/inicio.scss";
 @use "./partials/pages/show.scss";

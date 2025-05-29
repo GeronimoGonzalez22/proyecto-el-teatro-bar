@@ -124,7 +124,7 @@
 }
 
 // Footer
-@media (max-width: 381px) {
+@media (max-width: 423px) {
   .contenedor-iconos-footer{
     display: flex;
     justify-content: center;
@@ -176,11 +176,39 @@
   }
 }
 
-@media (min-width: 1200px) {
-  /* Estilos para xl en adelante */
 
+
+//info-sala
+
+.descripcion-teatro {
+  height: 300px;
 }
 
+/* MD: ≥768px */
+@media (min-width: 768px) {
+  .descripcion-teatro {
+  height: 260px;
+}
+  
+}
+
+/* LG: ≥992px */
+@media (min-width: 992px) {
+  .descripcion-teatro {
+  height: 295px;
+}
+}
+
+/* XL: ≥1200px */
+@media (min-width: 1200px) {
+  .descripcion-teatro {
+  height: 354px;
+}
+}
+
+/* XXL: ≥1400px */
 @media (min-width: 1400px) {
-  /* Estilos para xxl en adelante */
+  .descripcion-teatro {
+  height: 415px;
+}
 }
