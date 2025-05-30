@@ -18,6 +18,7 @@
     <!-- ===================================
     =               Header                =
     ==================================== -->
+    
     <nav class="navbar sticky-top navbar-expand-lg py-3 nav-shadow mb-5" style="background-color: #ffffff ;">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -36,7 +37,7 @@
                     El Teatro
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../pages/el-teatro/">Nuestra Sala</a></li>
+                  <li><a class="dropdown-item" href="../pages/el-teatro/info-sala.html">Nuestra Sala</a></li>
                   <li><a class="dropdown-item" href="#">Historia y Mision</a></li>
                   <li><a class="dropdown-item" href="#">Staff</a></li>
                   <li><a class="dropdown-item" href="#">Sumate al Equipo</a></li>
@@ -55,7 +56,6 @@
           </div>
         </div>
     </nav>
-    <!-- ======= End of Header ======== -->
 
     <!-- ===================================
     =               Main                =
@@ -63,7 +63,7 @@
     
     <main>
     
-        <!-- Seccion talleres -->
+        <!-- Seccion talleres - Titulo -->
         <div class="container">
             <h2 class="fw-semibold text-center mb-4" style="letter-spacing: 0.04em;"> 
                 <i class="bi bi-mortarboard-fill me-2 icono-talleres"></i>
@@ -80,7 +80,7 @@
             </p>
 
         </div>
-
+        <!-- Seccion talleres - Redes -->
         <div class="container">
             <div class="row mb-5 mt-4">
 
@@ -138,7 +138,7 @@
 
             <hr class="my-5 border-1 border-black">
         </div>
-
+        <!-- Seccion talleres - Formulario -->
         <div class="container">
             <h2 class="fw-semibold text-center mb-3" style="letter-spacing: 0.04em;">
             <i class="bi bi-lightbulb-fill icono-talleres"></i> 
@@ -148,70 +148,99 @@
         
                Este espacio también es tuyo.
             </p>
-            <p class="text-center fs-6 text-muted">
+            <p class="text-center fs-6 text-muted mb-5">
                 Completá el formulario con tu propuesta y nos pondremos en contacto con vos.
             </p>
         </div>
 
+        <form action="">
+            <div class="container">
 
-        <div class="contenedor-formulario">
-            <form action="">
-                <div class="form-1">
-                    <div>          
-                        <label for="text"></label>
-                        <input name="text" type="text" placeholder="Nombre y Apellido"/>
+                <div class="row g-4">
+
+                    <div class="col-12 col-md-4">
+                        <div class="form-floating">
+                            <input id="nombre" name="nombre" type="text" class="form-control" placeholder="Nombre y Apellido" />
+                            <label for="nombre">Nombre y Apellido</label>
+                        </div>
                     </div>
-                    <div>
-                        <label for="email"></label>
-                        <input name="email" type="email" placeholder="Correo Electronico" />
+                    <div class="col-12 col-md-4">
+                        <div class="form-floating">
+                            <input id="email" name="email" type="email" class="form-control" placeholder="Correo Electrónico" />
+                            <label for="email">Correo Electrónico</label>
+                        </div>
                     </div>
-                    <div>
-                        <label for="text"></label>
-                        <input name="text" type="text" placeholder="Teléfono (Opcional)" />
+                    <div class="col-12 col-md-4">
+                        <div class="form-floating">
+                            <input id="telefono" name="telefono" type="text" class="form-control" placeholder="Teléfono (Opcional)" />
+                            <label for="telefono">Teléfono (Opcional)</label>
+                        </div>
                     </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="form-floating">
+                            <input id="titulo" name="titulo" type="text" class="form-control" placeholder="Título del Taller o Clase" />
+                            <label for="titulo">Título del Taller o Clase</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="form-floating">
+                            <input id="publico" name="publico" type="text" class="form-control" placeholder="Público dirigido (Niños, adolescentes, adultos, etc.)" />
+                            <label for="publico">Público dirigido (Niños, adolescentes, adultos, etc.)</label>
+                        </div>                        
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="form-floating">
+                            <input id="disponibilidad" name="disponibilidad" type="text" class="form-control" placeholder="Disponibilidad horaria" />
+                            <label for="disponibilidad">Disponibilidad horaria</label>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Mensaje adicional" id="comentario" style="height: 100px"></textarea>
+                            <label for="comentario">Mensaje adicional</label>
+                        </div>
+                    </div>  
+                    <div class="col-12">
+                        <div class="contenedor-archivo">
+                            <label for="customFile" class="form-label"></label>
+                            <input type="file" id="customFile" class="input-file-hidden">
+                            <button type="button" class="custom-upload-btn" id="uploadTrigger">Elegir archivo</button>
+                            <span class="file-name" id="fileName">¿Queres adjuntar un CV o Portfolio?</span>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-4 mx-auto mb-5">
+                        <button type="submit" class="boton-enviar fw-bold">Enviar</button>
+                    </div>
+
+                    <script>
+                    const input = document.getElementById('customFile');
+                    const trigger = document.getElementById('uploadTrigger');
+                    const fileName = document.getElementById('fileName');
+
+                    trigger.addEventListener('click', () => {
+                        input.click();
+                    });
+
+                    input.addEventListener('change', () => {
+                        fileName.textContent = input.files.length > 0 ? input.files[0].name : 'Ningún archivo seleccionado';
+                    });
+                    </script>
+
                 </div>
 
-                <div class="form-2">
-                    <div>
-                        <label for="text"></label>
-                        <input name="text" type="text" placeholder="Titulo del Taller o Clase" />
-                    </div>
-                    <div>
-                        <label for="text"></label>
-                        <input name="text" type="text" placeholder="Publico dirigido (Niños, adolescentes, adultos, etc.)" />
-                    </div>
-                    <div>
-                        <label for="text"></label>
-                        <input name="text" type="text" placeholder="Disponibilidad horaria" />
-                    </div>
-                </div>
-
-                <div class="cont-comentario">    
-                    <textarea name="comentario" placeholder="Mensaje adicional"></textarea>
-                </div>
-
-                <div class="subir-archivo">
-                    <label for="archivo">¿Querés adjuntar un CV o portfolio?</label>
-                    <input name="archivo" type="file">
-                </div>
-
-                <div class="boton-enviar">
-                    <input class="input-enviar" type="submit" value="ENVIAR" />
-                </div>
-            </form>   
-        </div>
-
-
+             </div>
+        </form>
+        
     </main>
-
-    
-    <!-- ======= End of Main ======== -->
 
      <!-- ===================================
     =             Footer                   =
     ==================================== -->
 
-        <!-- Footer Desktop-->
+    <!-- Footer Desktop-->
     <footer class="bg-black py-5 d-none d-lg-block border-footer" id="ir-footer">
 
         <div class="container">
