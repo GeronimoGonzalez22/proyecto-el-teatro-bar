@@ -1,15 +1,40 @@
-// Carrousel
-@media (max-width: 480px){
-     #carouselExampleIndicators {
-    height: 150px;
+//Logo Header
+@media (max-width: 576px) {
+  .logo-teatro {
+    height: 36px;
   }
 }
-@media (min-width: 480px){
-     #carouselExampleIndicators {
-    height: 180px;
+@media (min-width: 576px) {
+  .logo-teatro {
+    height: 40px;
   }
 }
 
+@media (min-width: 768px) {
+  .logo-teatro {
+    height: 44px;
+  }
+}
+
+@media (min-width: 992px) {
+  .logo-teatro {
+    height: 48px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo-teatro {
+    height: 48px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .logo-teatro {
+    height: 48px;
+  }
+}
+
+// Carrousel
 @media (min-width: 576px) {
   #carouselExampleIndicators {
     height: 250px;
@@ -22,7 +47,7 @@
 }
 @media (min-width: 992px) {
   #carouselExampleIndicators {
-    height: 315px;
+    height: 375px;
   }
 }
 @media (min-width: 1666px) {
@@ -212,3 +237,5 @@
   height: 415px;
 }
 }
+
+

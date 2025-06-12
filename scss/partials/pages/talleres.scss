@@ -10,14 +10,15 @@
   gap: 8px;
   text-decoration: none;
   color: rgb(0, 0, 0);
-  transition: color 0.3s, transform 0.3s;
+  transition: color 0.3s ease,
 }
 
 .wsp-talleres a:hover {
-  color: #25D366;
+  color: #107c41;
 }
 
 /* Formulario*/
+
 .form-control {
   border-radius: 1rem;
 }
@@ -71,15 +72,22 @@
 .boton-enviar {
   border-radius: 1rem;
   width: 100%;
+  height: 40px;
   border: none;
-  padding: 16px 12px;
-  text-transform: uppercase;
   background-color: #A80000;
   color: white;
   cursor: pointer;
   text-decoration: none;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  padding: 0;
   white-space: normal;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .boton-enviar:hover {
   background-color: #8A0000;

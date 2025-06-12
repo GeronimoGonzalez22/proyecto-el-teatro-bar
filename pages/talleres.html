@@ -37,7 +37,7 @@
     <nav class="navbar sticky-top navbar-expand-lg py-3 nav-shadow mb-5" style="background-color: #ffffff ;">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="../images/Logo-elTeatro.svg" alt="logo-elteatro" width="176px" height="auto">
+                <img src="../images/Logo-elTeatro.svg" alt="logo-elteatro" class="logo-teatro">
               </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -96,12 +96,9 @@
 
         </div>
         <!-- Seccion talleres - Redes -->
-        <div class="container">
-            <div class="row mb-5 mt-4">
-
-                <div class="col-12 d-flex gap-5 justify-content-center">
-                    
-                    <div class="d-flex gap-3">
+        <div class="container d-flex flex-wrap justify-content-center mt-4 custom-redes column-gap-5 row-gap-4">
+               
+            <div class="d-flex gap-3">
                         <div class="icono-ig-show"> 
                                     <a href="#" target="_blank">
                                         <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -135,100 +132,101 @@
                                         </svg>
                                     </a>
                         </div>
-                    </div>
-
-                    <div class="wsp-talleres">
-                        <a href="">
-                            <svg width="32" height="32"  fill="currentColor" viewBox="0 0 32 32"xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.57857 15.9C6.57857 17.6786 7.07857 19.4143 8.02143 20.9071L8.24286 21.2643L7.29286 24.7357L10.8571 23.8L11.2 24.0071C12.6429 24.8643 14.3 25.3214 15.9929 25.3214H16C21.1857 25.3214 25.5214 21.1 25.5214 15.9071C25.5214 13.3929 24.4357 11.0286 22.6571 9.25C20.8714 7.46429 18.5143 6.48571 16 6.48571C10.8071 6.48571 6.58571 10.7071 6.57857 15.9ZM19.6286 21.2857C18.7286 21.4214 18.0286 21.35 16.2357 20.5786C13.6071 19.4429 11.8214 16.9 11.4571 16.3857C11.4286 16.3429 11.4071 16.3214 11.4 16.3071C11.2571 16.1214 10.2429 14.7714 10.2429 13.3786C10.2429 12.0643 10.8857 11.3857 11.1857 11.0714C11.2071 11.05 11.2214 11.0357 11.2357 11.0143C11.4929 10.7286 11.8 10.6571 11.9929 10.6571C12.1786 10.6571 12.3714 10.6571 12.5357 10.6643H12.5929C12.7571 10.6643 12.9643 10.6643 13.1714 11.15C13.2571 11.3571 13.3857 11.6714 13.5214 11.9929C13.7571 12.5643 14 13.1571 14.0429 13.25C14.1143 13.3929 14.1643 13.5571 14.0643 13.7429C13.8214 14.2286 13.5714 14.4857 13.4 14.6714C13.1786 14.9 13.0786 15.0071 13.2357 15.2857C14.3286 17.1643 15.4214 17.8143 17.0857 18.65C17.3714 18.7929 17.5357 18.7714 17.7 18.5786C17.8643 18.3929 18.4071 17.75 18.5929 17.4714C18.7786 17.1857 18.9714 17.2357 19.2286 17.3286C19.4857 17.4214 20.8786 18.1071 21.1643 18.25C21.2214 18.2786 21.2714 18.3 21.3143 18.3214C21.5143 18.4214 21.65 18.4857 21.7071 18.5786C21.7714 18.7143 21.7714 19.2857 21.5357 19.9429C21.3 20.6071 20.1714 21.2071 19.6286 21.2857ZM32 4.57143C32 2.05 29.95 0 27.4286 0H4.57143C2.05 0 0 2.05 0 4.57143V27.4286C0 29.95 2.05 32 4.57143 32H27.4286C29.95 32 32 29.95 32 27.4286V4.57143ZM10.5786 25.85L4.57143 27.4286L6.17857 21.5571C5.18571 19.8429 4.66429 17.8929 4.66429 15.8929C4.67143 9.65 9.75 4.57143 15.9929 4.57143C19.0214 4.57143 21.8643 5.75 24.0071 7.89286C26.1429 10.0357 27.4286 12.8786 27.4286 15.9071C27.4286 22.15 22.2357 27.2286 15.9929 27.2286C14.0929 27.2286 12.2286 26.75 10.5786 25.85Z"/>
-                            </svg>
-                    
-                            <span>+54 9 221 6383943</span>
-                        </a>
-                    </div>
-                    
-                </div>
-
             </div>
 
+            <div class="wsp-talleres">
+                <a href="">
+                    <svg width="32" height="32"  fill="currentColor" viewBox="0 0 32 32"xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.57857 15.9C6.57857 17.6786 7.07857 19.4143 8.02143 20.9071L8.24286 21.2643L7.29286 24.7357L10.8571 23.8L11.2 24.0071C12.6429 24.8643 14.3 25.3214 15.9929 25.3214H16C21.1857 25.3214 25.5214 21.1 25.5214 15.9071C25.5214 13.3929 24.4357 11.0286 22.6571 9.25C20.8714 7.46429 18.5143 6.48571 16 6.48571C10.8071 6.48571 6.58571 10.7071 6.57857 15.9ZM19.6286 21.2857C18.7286 21.4214 18.0286 21.35 16.2357 20.5786C13.6071 19.4429 11.8214 16.9 11.4571 16.3857C11.4286 16.3429 11.4071 16.3214 11.4 16.3071C11.2571 16.1214 10.2429 14.7714 10.2429 13.3786C10.2429 12.0643 10.8857 11.3857 11.1857 11.0714C11.2071 11.05 11.2214 11.0357 11.2357 11.0143C11.4929 10.7286 11.8 10.6571 11.9929 10.6571C12.1786 10.6571 12.3714 10.6571 12.5357 10.6643H12.5929C12.7571 10.6643 12.9643 10.6643 13.1714 11.15C13.2571 11.3571 13.3857 11.6714 13.5214 11.9929C13.7571 12.5643 14 13.1571 14.0429 13.25C14.1143 13.3929 14.1643 13.5571 14.0643 13.7429C13.8214 14.2286 13.5714 14.4857 13.4 14.6714C13.1786 14.9 13.0786 15.0071 13.2357 15.2857C14.3286 17.1643 15.4214 17.8143 17.0857 18.65C17.3714 18.7929 17.5357 18.7714 17.7 18.5786C17.8643 18.3929 18.4071 17.75 18.5929 17.4714C18.7786 17.1857 18.9714 17.2357 19.2286 17.3286C19.4857 17.4214 20.8786 18.1071 21.1643 18.25C21.2214 18.2786 21.2714 18.3 21.3143 18.3214C21.5143 18.4214 21.65 18.4857 21.7071 18.5786C21.7714 18.7143 21.7714 19.2857 21.5357 19.9429C21.3 20.6071 20.1714 21.2071 19.6286 21.2857ZM32 4.57143C32 2.05 29.95 0 27.4286 0H4.57143C2.05 0 0 2.05 0 4.57143V27.4286C0 29.95 2.05 32 4.57143 32H27.4286C29.95 32 32 29.95 32 27.4286V4.57143ZM10.5786 25.85L4.57143 27.4286L6.17857 21.5571C5.18571 19.8429 4.66429 17.8929 4.66429 15.8929C4.67143 9.65 9.75 4.57143 15.9929 4.57143C19.0214 4.57143 21.8643 5.75 24.0071 7.89286C26.1429 10.0357 27.4286 12.8786 27.4286 15.9071C27.4286 22.15 22.2357 27.2286 15.9929 27.2286C14.0929 27.2286 12.2286 26.75 10.5786 25.85Z"/>
+                    </svg>
+                    
+                    <span>+54 9 221 6383943</span>
+                </a>
+            </div>
+                    
+        </div>
+
+        <div class="container">
             <hr class="my-5 border-1 border-black">
         </div>
-        <!-- Seccion talleres - Formulario -->
-        <div class="container">
-            <h2 class="fw-semibold text-center mb-3" style="letter-spacing: 0.04em;">
-            <i class="bi bi-lightbulb-fill icono-talleres"></i> 
-            ¿Querés dar clases o proponer un taller?
-            </h2>
-            <p class="text-center fs-5 fw-bold texto-talleres-enfasis">
         
-               Este espacio también es tuyo.
-            </p>
-            <p class="text-center fs-6 text-muted mb-5">
-                Completá el formulario con tu propuesta y nos pondremos en contacto con vos.
-            </p>
-        </div>
-
-        <form action="">
+        <!-- Seccion talleres - Formulario -->
             <div class="container">
+                
+                <h2 class="fw-semibold text-center mb-3" style="letter-spacing: 0.04em;">
+                    <i class="bi bi-lightbulb-fill icono-talleres"></i> 
+                    ¿Querés dar clases o proponer un taller?
+                </h2>
 
-                <div class="row g-4">
+                <p class="text-center fs-5 fw-bold texto-talleres-enfasis">
+                Este espacio también es tuyo.
+                </p>
 
-                    <div class="col-12 col-md-4">
-                        <div class="form-floating">
-                            <input id="nombre" name="nombre" type="text" class="form-control" placeholder="Nombre y Apellido" />
-                            <label for="nombre">Nombre y Apellido</label>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="form-floating">
-                            <input id="email" name="email" type="email" class="form-control" placeholder="Correo Electrónico" />
-                            <label for="email">Correo Electrónico</label>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="form-floating">
-                            <input id="telefono" name="telefono" type="text" class="form-control" placeholder="Teléfono (Opcional)" />
-                            <label for="telefono">Teléfono (Opcional)</label>
-                        </div>
-                    </div>
+                <p class="text-center fs-6 text-muted mb-5">
+                    Completá el formulario con tu propuesta y nos pondremos en contacto con vos.
+                </p>
+            </div>
 
-                    <div class="col-12 col-md-4">
-                        <div class="form-floating">
-                            <input id="titulo" name="titulo" type="text" class="form-control" placeholder="Título del Taller o Clase" />
-                            <label for="titulo">Título del Taller o Clase</label>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="form-floating">
-                            <input id="publico" name="publico" type="text" class="form-control" placeholder="Público dirigido (Niños, adolescentes, adultos, etc.)" />
-                            <label for="publico">Público dirigido (Niños, adolescentes, adultos, etc.)</label>
-                        </div>                        
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="form-floating">
-                            <input id="disponibilidad" name="disponibilidad" type="text" class="form-control" placeholder="Disponibilidad horaria" />
-                            <label for="disponibilidad">Disponibilidad horaria</label>
-                        </div>
-                    </div>
+            <form action="">
+                <div class="container">
+                    <div class="row g-4">
 
-                    <div class="col-12">
-                        <div class="form-floating">
-                            <textarea class="form-control" placeholder="Mensaje adicional" id="comentario" style="height: 100px"></textarea>
-                            <label for="comentario">Mensaje adicional</label>
+                        <div class="col-12 col-md-4">
+                            <div class="form-floating">
+                                <input id="nombre" name="nombre" type="text" class="form-control" placeholder="Nombre y Apellido" />
+                                <label for="nombre">Nombre y Apellido</label>
+                            </div>
                         </div>
-                    </div>  
-                    <div class="col-12">
-                        <div class="contenedor-archivo">
-                            <label for="customFile" class="form-label"></label>
-                            <input type="file" id="customFile" class="input-file-hidden">
-                            <button type="button" class="custom-upload-btn" id="uploadTrigger">Elegir archivo</button>
-                            <span class="file-name" id="fileName">¿Queres adjuntar un CV o Portfolio?</span>
+                        <div class="col-12 col-md-4">
+                            <div class="form-floating">
+                                <input id="email" name="email" type="email" class="form-control" placeholder="Correo Electrónico" />
+                                <label for="email">Correo Electrónico</label>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="col-12 col-md-4 mx-auto mb-5">
-                        <button type="submit" class="boton-enviar fw-bold">Enviar</button>
-                    </div>
+                        <div class="col-12 col-md-4">
+                            <div class="form-floating">
+                                <input id="telefono" name="telefono" type="text" class="form-control" placeholder="Teléfono (Opcional)" />
+                                <label for="telefono">Teléfono (Opcional)</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <div class="form-floating">
+                                <input id="titulo" name="titulo" type="text" class="form-control" placeholder="Título del Taller o Clase" />
+                                <label for="titulo">Título del Taller o Clase</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="form-floating">
+                                <input id="publico" name="publico" type="text" class="form-control" placeholder="Público dirigido (Niños, adolescentes, adultos, etc.)" />
+                                <label for="publico">Público dirigido (Niños, adolescentes, adultos, etc.)</label>
+                            </div>                        
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="form-floating">
+                                <input id="disponibilidad" name="disponibilidad" type="text" class="form-control" placeholder="Disponibilidad horaria" />
+                                <label for="disponibilidad">Disponibilidad horaria</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Mensaje adicional" id="comentario" style="height: 100px"></textarea>
+                                <label for="comentario">Mensaje adicional</label>
+                            </div>
+                        </div>  
+                        <div class="col-12">
+                            <div class="contenedor-archivo">
+                                <label for="customFile" class="form-label"></label>
+                                <input type="file" id="customFile" class="input-file-hidden">
+                                <button type="button" class="custom-upload-btn" id="uploadTrigger">Elegir archivo</button>
+                                <span class="file-name" id="fileName">¿Queres adjuntar un CV o Portfolio?</span>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 mx-auto mb-5">
+                            <button type="submit" class="boton-enviar fw-bold">Enviar</button>
+                        </div>
 
                     <script>
                     const input = document.getElementById('customFile');
@@ -363,10 +361,10 @@
 
     </footer>
     <!-- Footer Mobile  -->
-    <footer class="bg-black py-5 d-block d-lg-none border-footer" id="ir-footer">
+    <footer class="bg-black py-4 d-block d-lg-none border-footer" id="ir-footer">
 
         <div class="container">
-            <div class="mt-3">
+            <div>
                 <p class="mb-2 texto-footer text-center">Horario de Boletería</p>
                 <p class="mb-2 fw-semibold texto-footer text-center">Lunes a Sábados de 15 a 20 hs.</p>
             </div>

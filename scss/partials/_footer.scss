@@ -4,7 +4,7 @@
   gap: 8px;
   text-decoration: none;
   color: white;
-  transition: color 0.3s, transform 0.3s;
+  transition: color 0.3s, transform 0.3s ease;
 }
 
 .icono-footer a:hover {
@@ -13,6 +13,7 @@
 
 .icono-footer-ig a {
   fill: white;
+  transition: fill 0.3s ease;
 }
 
 .icono-footer-ig a:hover {
@@ -21,6 +22,7 @@
 
 .icono-footer-yt{
     stroke: white;
+    transition: stroke 0.3s ease;
 }
 .icono-footer-yt:hover{
     stroke: #A80000;
@@ -28,6 +30,7 @@
 
 .icono-footer-fb{
     stroke: white;
+    transition: stroke 0.3s ease;
 }
 
 .icono-footer-fb:hover{
@@ -37,6 +40,7 @@
 .icono-footer-x{
     fill: white;
     stroke: white;
+    transition: stroke 0.3s ease;
 }
 .icono-footer-x:hover{
     stroke: #A80000;
@@ -49,6 +53,7 @@
 
 .texto-footer-bases{
     color: white;
+    transition: color 0.3s ease;
 }
 
 .texto-footer-bases:hover{

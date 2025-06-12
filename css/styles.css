@@ -20,6 +20,7 @@ iframe {
   border: none;
   border-radius: 1rem;
   overflow: hidden;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
 }
 
 .titulo {
@@ -28,6 +29,10 @@ iframe {
   padding-bottom: 2rem;
   font-weight: 600;
   font-size: 2rem;
+}
+
+.logo-teatro {
+  width: auto;
 }
 
 /* Quito el shadows border del menu hamburguesa*/
@@ -97,7 +102,7 @@ iframe {
   gap: 8px;
   text-decoration: none;
   color: white;
-  transition: color 0.3s, transform 0.3s;
+  transition: color 0.3s, transform 0.3s ease;
 }
 
 .icono-footer a:hover {
@@ -106,6 +111,7 @@ iframe {
 
 .icono-footer-ig a {
   fill: white;
+  transition: fill 0.3s ease;
 }
 
 .icono-footer-ig a:hover {
@@ -114,6 +120,7 @@ iframe {
 
 .icono-footer-yt {
   stroke: white;
+  transition: stroke 0.3s ease;
 }
 
 .icono-footer-yt:hover {
@@ -122,6 +129,7 @@ iframe {
 
 .icono-footer-fb {
   stroke: white;
+  transition: stroke 0.3s ease;
 }
 
 .icono-footer-fb:hover {
@@ -131,6 +139,7 @@ iframe {
 .icono-footer-x {
   fill: white;
   stroke: white;
+  transition: stroke 0.3s ease;
 }
 
 .icono-footer-x:hover {
@@ -144,6 +153,7 @@ iframe {
 
 .texto-footer-bases {
   color: white;
+  transition: color 0.3s ease;
 }
 
 .texto-footer-bases:hover {
@@ -160,14 +170,34 @@ iframe {
   border-top: 2px solid #A80000;
 }
 
-@media (max-width: 480px) {
-  #carouselExampleIndicators {
-    height: 150px;
+@media (max-width: 576px) {
+  .logo-teatro {
+    height: 36px;
   }
 }
-@media (min-width: 480px) {
-  #carouselExampleIndicators {
-    height: 180px;
+@media (min-width: 576px) {
+  .logo-teatro {
+    height: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .logo-teatro {
+    height: 44px;
+  }
+}
+@media (min-width: 992px) {
+  .logo-teatro {
+    height: 48px;
+  }
+}
+@media (min-width: 1200px) {
+  .logo-teatro {
+    height: 48px;
+  }
+}
+@media (min-width: 1400px) {
+  .logo-teatro {
+    height: 48px;
   }
 }
 @media (min-width: 576px) {
@@ -182,7 +212,7 @@ iframe {
 }
 @media (min-width: 992px) {
   #carouselExampleIndicators {
-    height: 315px;
+    height: 375px;
   }
 }
 @media (min-width: 1666px) {
@@ -360,8 +390,59 @@ body {
 /* =====================================
 =               Slider                =
 ===================================== */
+#carouselExampleIndicatorsMobile {
+  position: relative;
+  overflow: hidden;
+}
+
+#carouselExampleIndicatorsMobile .carousel-inner,
+#carouselExampleIndicatorsMobile .carousel-item,
+#carouselExampleIndicatorsMobile .carousel-item img {
+  height: 100%;
+}
+
+#carouselExampleIndicatorsMobile .carousel-item img {
+  object-fit: cover;
+  width: 100%;
+}
+
+#carouselExampleIndicatorsMobile .carousel-indicators {
+  gap: 0 0.2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+#carouselExampleIndicatorsMobile .carousel-indicators button {
+  width: 6vw;
+  max-width: 39px;
+  height: 1vw;
+  max-height: 6px;
+  min-width: 20px;
+  min-height: 3px;
+  background-color: #c7c7c7;
+  border: none;
+  border-radius: 0.25rem;
+  opacity: 1;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 0.5rem;
+}
+
+#carouselExampleIndicatorsMobile .carousel-indicators .active {
+  background-color: #A80000;
+}
+
+#carouselExampleIndicatorsMobile .carousel-indicators button:hover {
+  background-color: #f0f0f0;
+}
+
 #carouselExampleIndicators {
-  height: 300px;
   position: relative;
   overflow: hidden;
 }
@@ -551,6 +632,7 @@ body {
   font-size: 20px;
   background-color: #A80000;
   color: white;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .boton-comprar:hover {
@@ -580,6 +662,7 @@ body {
 
 .icono-ig-show a {
   fill: rgb(0, 0, 0);
+  transition: fill 0.3s ease;
 }
 
 .icono-ig-show a:hover {
@@ -588,6 +671,7 @@ body {
 
 .icono-yt-show {
   stroke: rgb(0, 0, 0);
+  transition: stroke 0.3s ease;
 }
 
 .icono-yt-show:hover {
@@ -596,6 +680,7 @@ body {
 
 .icono-fb-show {
   stroke: rgb(0, 0, 0);
+  transition: stroke 0.3s ease;
 }
 
 .icono-fb-show:hover {
@@ -605,6 +690,7 @@ body {
 .icono-x-show {
   fill: rgb(0, 0, 0);
   stroke: rgb(4, 4, 4);
+  transition: stroke 0.3s ease;
 }
 
 .icono-x-show:hover {
@@ -651,6 +737,7 @@ body {
   cursor: pointer;
   text-decoration: none;
   white-space: normal;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .boton-descarga:hover {
@@ -685,11 +772,11 @@ body {
   gap: 8px;
   text-decoration: none;
   color: rgb(0, 0, 0);
-  transition: color 0.3s, transform 0.3s;
+  transition: color 0.3s ease;
 }
 
 .wsp-talleres a:hover {
-  color: #25D366;
+  color: #107c41;
 }
 
 /* Formulario*/
@@ -747,14 +834,19 @@ body {
 .boton-enviar {
   border-radius: 1rem;
   width: 100%;
+  height: 40px;
   border: none;
-  padding: 16px 12px;
-  text-transform: uppercase;
   background-color: #A80000;
   color: white;
   cursor: pointer;
   text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
   white-space: normal;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .boton-enviar:hover {
