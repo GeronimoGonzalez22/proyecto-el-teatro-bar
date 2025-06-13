@@ -1,44 +1,35 @@
-
-.galeria{
-    margin-inline: 14rem;
-}
-.todo{
-    padding: 1rem;
-    margin-top: 1rem;
-}
-.bar{
-    background-color: gray;
-}
-
-.opera{
-    background-color: grey;
-}
-
-.contenedor-fotos{
-    display: flex;
-    justify-content: center;
-    margin: 2rem 4rem 0.5rem 4rem;
+.boton-galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid #A80000;
+  font-weight: 600;
+  font-size: clamp(0.75rem, 2.5vw, 1rem);
+  text-transform: uppercase;
+  background-color: white;
+  color: #A80000 !important;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: normal;
+  transition: background-color 0.3s ease,box-shadow 0.3s ease, color 0.3s ease;
 }
 
-.columna{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-.columna div{
-    display: flex;
-    padding-bottom: 1rem;
-    margin: 1rem;
+.boton-galeria:hover {
+  background-color: #A80000;
+  color: white !important;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-.columna div img{
-    display: flex;
-    height: 25vw;
-    width: 100%;
-    border-radius: 1rem;
+.boton-galeria__active{
+background-color: #A80000 !important;
+color: white !important;
+box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-.mostrar-mas{
-    display: flex;
-    justify-content: center;
+.foto-galeria div img{
+box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.15) !important;
 }
