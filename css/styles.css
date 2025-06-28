@@ -9,9 +9,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-a:visited {
-  color: inherit;
-}
 a:hover {
   color: #A80000;
 }
@@ -35,65 +32,45 @@ iframe {
   width: auto;
 }
 
-/* Quito el shadows border del menu hamburguesa*/
-.navbar-toggler:focus {
-  box-shadow: none;
-}
-
-/* Quito la flecha*/
-.dropdown-toggle::after {
-  display: none !important;
-}
-
-.active {
-  color: #A80000 !important;
-  font-weight: 700;
-}
-
-.nav-link:hover {
-  color: #A80000 !important;
-}
-
-.nav-link:focus {
-  color: rgba(33, 37, 41, 0.6509803922);
-}
-
-.navbar .dropdown-toggle:focus,
-.navbar .dropdown-toggle.show {
+.boton_activo {
   color: #A80000;
-}
-
-.navbar .dropdown-toggle:not(.show):focus {
-  color: rgba(33, 37, 41, 0.6509803922);
-}
-
-.dropdown-item {
-  color: rgba(33, 37, 41, 0.6509803922) !important;
-  font-weight: 600;
-}
-
-.dropdown-item:hover {
-  color: #A80000 !important;
-  background-color: transparent !important;
-}
-
-.dropdown-item:active,
-.dropdown-item:focus {
-  background-color: transparent !important;
+  font-weight: 700;
 }
 
 .nav-shadow {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
 }
 
-.navbar-toggler:hover {
-  border: 1px solid rgba(154, 154, 154, 0.15);
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+.nav-link:hover, .nav-link:focus {
+  color: #A80000;
+}
+
+.dropdown-item {
+  color: rgba(33, 37, 41, 0.6509803922);
+  font-weight: 600;
+}
+.dropdown-item:hover, .dropdown-item:focus, .dropdown-item:active {
+  color: #A80000;
+  background-color: transparent;
 }
 
 .navbar-toggler {
   border: 1px solid transparent;
   transition: all 0.3s ease;
+}
+.navbar-toggler:hover {
+  border: 1px solid rgba(154, 154, 154, 0.15);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar .dropdown-toggle::after {
+  display: none;
+}
+.navbar .dropdown-toggle:focus, .navbar .dropdown-toggle.show {
+  color: #A80000;
 }
 
 .icono-footer a {
@@ -491,7 +468,7 @@ body {
 }
 
 #carouselExampleIndicators .carousel-indicators button:hover {
-  background-color: #f0f0f0;
+  background-color: white;
 }
 
 .carousel {
@@ -611,7 +588,7 @@ body {
 =               Sponsors               =
 ===================================== */
 .logo-rect {
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 1rem;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
 }
@@ -757,26 +734,8 @@ body {
   white-space: normal;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-
 .boton-descarga:hover {
   background-color: #8A0000;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
-}
-
-.boton-plano {
-  color: #A80000;
-  border: 1px solid #A80000;
-  border-color: #A80000;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  text-transform: uppercase;
-  font-size: clamp(14px, 2.5vw, 1rem);
-  border-radius: 1rem;
-  transition: background-color 0.4s ease;
-  margin-bottom: 4rem;
-}
-.boton-plano:hover {
-  background-color: #A80000;
-  color: #ffffff;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -789,7 +748,7 @@ body {
   align-items: center;
   gap: 8px;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: black;
   transition: color 0.3s ease;
 }
 
@@ -801,7 +760,6 @@ body {
 .form-control {
   border-radius: 1rem;
 }
-
 .form-control:focus {
   border-color: #A80000;
   box-shadow: 0 0 4px 0 rgba(168, 0, 0, 0.2);
@@ -817,7 +775,6 @@ body {
   border-radius: 1rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-
 .contenedor-archivo:focus-within {
   border-color: #A80000;
   box-shadow: 0 0 4px 0 rgba(168, 0, 0, 0.2);
@@ -828,7 +785,6 @@ body {
   display: none;
 }
 
-/* Botón personalizado */
 .custom-upload-btn {
   background-color: #A80000;
   color: white;
@@ -839,7 +795,6 @@ body {
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
 }
-
 .custom-upload-btn:hover {
   background-color: #8A0000;
 }
@@ -866,7 +821,6 @@ body {
   white-space: normal;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-
 .boton-enviar:hover {
   background-color: #8A0000;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
@@ -880,32 +834,33 @@ body {
   height: 100%;
   padding: 0.5rem;
   border-radius: 1rem;
-  border: 1px solid #A80000;
   font-weight: 600;
   font-size: clamp(0.75rem, 2.5vw, 1rem);
   text-transform: uppercase;
-  background-color: white;
-  color: #A80000 !important;
   cursor: pointer;
   text-decoration: none;
   white-space: normal;
   transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
-
 .boton-galeria:hover {
   background-color: #A80000;
-  color: white !important;
+  color: white;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .boton-galeria__active {
-  background-color: #A80000 !important;
-  color: white !important;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+  background-color: #A80000;
+  color: white;
 }
 
-.foto-galeria div img {
-  box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.15) !important;
+.boton-galeria__inactive {
+  background-color: white;
+  color: #A80000;
+  border: 1px solid #A80000;
+}
+
+.foto-galeria figure img {
+  box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 /*# sourceMappingURL=styles.css.map */

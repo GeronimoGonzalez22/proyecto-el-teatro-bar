@@ -1,3 +1,5 @@
+@use "../variables" as v;
+
 /* =====================================
 =               Slider                =
 ===================================== */
@@ -47,7 +49,7 @@
 }
 
 #carouselExampleIndicatorsMobile .carousel-indicators .active {
-  background-color: #A80000;
+  background-color: v.$color-principal;
 }
 
 #carouselExampleIndicatorsMobile .carousel-indicators button:hover {
@@ -100,11 +102,11 @@
 }
 
 #carouselExampleIndicators .carousel-indicators .active {
-  background-color: #A80000;
+  background-color: v.$color-principal;
 }
 
 #carouselExampleIndicators .carousel-indicators button:hover {
-  background-color: #f0f0f0;
+  background-color: white;
 }
 .carousel{
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12) !important;
@@ -216,14 +218,14 @@ font-style: normal;
     font-family: proxima-nova, sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: #A80000;
+    color: v.$color-principal;
 }
 
 /* =====================================
 =               Sponsors               =
 ===================================== */
 .logo-rect {
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 1rem;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
 }

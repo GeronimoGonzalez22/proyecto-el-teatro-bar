@@ -1,5 +1,6 @@
+@use "../variables" as v;
 
-//Info-Sala 
+// Modificacion del Scrollbar (el original es muy grueso)
 .descripcion-teatro {
 
   // Scrollbar para Firefox
@@ -38,33 +39,16 @@
   font-weight: 600;
   font-size: clamp(0.75rem, 2.5vw, 1rem);
   text-transform: uppercase;
-  background-color: #A80000;
+  background-color: v.$color-principal;
   color: white !important;
   cursor: pointer;
   text-decoration: none;
   white-space: normal;
   transition: background-color 0.3s ease,box-shadow 0.3s ease;
-}
 
-.boton-descarga:hover {
-  background-color: #8A0000;
+  &:hover {
+  background-color: v.$boton-hover-bg;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
-}
-
-
-.boton-plano {
-  color: #A80000;
-  border: 1px solid #A80000;
-  border-color: #A80000;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  text-transform: uppercase;
-  font-size: clamp(14px, 2.5vw, 1rem);
-  border-radius: 1rem;
-  transition: background-color 0.4s ease;
-  margin-bottom: 4rem;
-  &:hover{
-    background-color: #A80000;
-    color: #ffffff;
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
   }
 }
+

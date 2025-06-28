@@ -1,3 +1,5 @@
+@use "../variables" as v;
+
 .boton-galeria {
   display: flex;
   justify-content: center;
@@ -6,30 +8,32 @@
   height: 100%;
   padding: 0.5rem;
   border-radius: 1rem;
-  border: 1px solid #A80000;
   font-weight: 600;
   font-size: clamp(0.75rem, 2.5vw, 1rem);
   text-transform: uppercase;
-  background-color: white;
-  color: #A80000 !important;
   cursor: pointer;
   text-decoration: none;
   white-space: normal;
   transition: background-color 0.3s ease,box-shadow 0.3s ease, color 0.3s ease;
-}
 
-.boton-galeria:hover {
-  background-color: #A80000;
-  color: white !important;
+  &:hover {
+  background-color: v.$color-principal;
+  color: white;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+  } 
 }
 
 .boton-galeria__active{
-background-color: #A80000 !important;
-color: white !important;
-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+background-color: v.$color-principal;
+color: white;
 }
 
-.foto-galeria div img{
-box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.15) !important;
+.boton-galeria__inactive{
+  background-color: white;
+  color: v.$color-principal;
+  border: 1px solid v.$color-principal;
+}
+
+.foto-galeria figure img{
+box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.15);
 }

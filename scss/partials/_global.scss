@@ -1,14 +1,13 @@
+@use "./variables" as v;
+
 a{
     text-decoration: none;
     color: inherit;
 
-&:visited{
-    color: inherit;
-}
+    &:hover{
+        color: v.$color-principal;
+    }
 
-&:hover{
-    color: #A80000;
-}
 }
 
 iframe{

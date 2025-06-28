@@ -1,3 +1,5 @@
+@use "./variables" as v;
+
 .icono-footer a {
   display: inline-flex;
   align-items: center;
@@ -17,7 +19,7 @@
 }
 
 .icono-footer-ig a:hover {
-  fill: #A80000;
+  fill: v.$color-principal;
 }
 
 .icono-footer-yt{
@@ -25,7 +27,7 @@
     transition: stroke 0.3s ease;
 }
 .icono-footer-yt:hover{
-    stroke: #A80000;
+    stroke: v.$color-principal;
 }
 
 .icono-footer-fb{
@@ -34,7 +36,7 @@
 }
 
 .icono-footer-fb:hover{
-    stroke: #A80000;
+    stroke: v.$color-principal;
 }
 
 .icono-footer-x{
@@ -43,8 +45,8 @@
     transition: stroke 0.3s ease;
 }
 .icono-footer-x:hover{
-    stroke: #A80000;
-    fill: #A80000;
+    stroke: v.$color-principal;
+    fill: v.$color-principal;
 }
 
 .texto-footer{
@@ -57,7 +59,7 @@
 }
 
 .texto-footer-bases:hover{
-color: #A80000;
+color: v.$color-principal;
 }
 
 .contenedor-iconos-footer{
@@ -67,5 +69,5 @@ color: #A80000;
 }
 
 .border-footer{
-    border-top: 2px solid #A80000;
+    border-top: 2px solid v.$color-principal;
 }
