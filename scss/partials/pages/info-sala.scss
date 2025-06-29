@@ -2,12 +2,9 @@
 
 // Modificacion del Scrollbar (el original es muy grueso)
 .descripcion-teatro {
-
-  // Scrollbar para Firefox
   scrollbar-width: thin;
-  scrollbar-color: #ccc transparent;
 
-  // Scrollbar para WebKit (Chrome, Safari, Edge)
+  scrollbar-color: #ccc transparent;
   &::-webkit-scrollbar {
     width: 6px;
   }
@@ -40,7 +37,7 @@
   font-size: clamp(0.75rem, 2.5vw, 1rem);
   text-transform: uppercase;
   background-color: v.$color-principal;
-  color: white !important;
+  color: white;
   cursor: pointer;
   text-decoration: none;
   white-space: normal;
@@ -49,6 +46,7 @@
   &:hover {
   background-color: v.$boton-hover-bg;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+  color: white;
   }
 }
 
