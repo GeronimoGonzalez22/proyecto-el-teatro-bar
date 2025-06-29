@@ -472,7 +472,7 @@ body {
 }
 
 .carousel {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
 }
 
 /* =====================================
@@ -594,14 +594,14 @@ body {
 }
 
 .text-rojo {
-  color: #A80000 !important;
+  color: #A80000;
 }
 
 .contenedor-fecha {
   text-align: center;
   box-shadow: 0px 0px 2px 0.5px rgba(0, 0, 0, 0.05);
   border: 1.2px solid rgba(0, 0, 0, 0.08);
-  padding: 0.5rem 1rem !important;
+  padding: 0.5rem 1rem;
   border-radius: 1rem;
 }
 
@@ -628,8 +628,8 @@ body {
   background-color: #A80000;
   color: white;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
-
 .boton-comprar:hover {
   background-color: #8A0000;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
@@ -638,62 +638,56 @@ body {
 .btn-modal-cancelar {
   width: 10rem;
 }
-
 .btn-modal-cancelar:hover {
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .btn-modal-comprar {
   color: #A80000;
-  border-color: #A80000 !important;
+  border-color: #A80000;
   width: 10rem;
 }
-
 .btn-modal-comprar:hover {
   background-color: #A80000;
   color: white;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-.icono-ig-show a {
-  fill: rgb(0, 0, 0);
+.icono-ig-show {
+  fill: black;
   transition: fill 0.3s ease;
 }
-
-.icono-ig-show a:hover {
+.icono-ig-show:hover {
   fill: #A80000;
 }
 
 .icono-yt-show {
-  stroke: rgb(0, 0, 0);
+  stroke: black;
   transition: stroke 0.3s ease;
 }
-
 .icono-yt-show:hover {
   stroke: #A80000;
 }
 
 .icono-fb-show {
-  stroke: rgb(0, 0, 0);
+  stroke: black;
   transition: stroke 0.3s ease;
 }
-
 .icono-fb-show:hover {
   stroke: #A80000;
 }
 
 .icono-x-show {
-  fill: rgb(0, 0, 0);
-  stroke: rgb(4, 4, 4);
+  fill: black;
+  stroke: black;
   transition: stroke 0.3s ease;
 }
-
 .icono-x-show:hover {
   stroke: #A80000;
   fill: #A80000;
 }
 
-.card {
+.sombra-card {
   box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.25);
 }
 
